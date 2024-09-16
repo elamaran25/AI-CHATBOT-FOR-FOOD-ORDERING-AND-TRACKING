@@ -1,53 +1,50 @@
-# AI-CHATBOT-FOR-FOOD-ORDERING-AND-TRACKING
+**AI-CHATBOT-FOR-FOOD-ORDERING-AND-TRACKING**
 
-Here's a `README.md` file for your project:
 
-```markdown
-# AI Chatbot for Food Ordering and Tracking
 
-## Project Description
+**Project Description**
 The **AI Chatbot for Food Ordering and Tracking** is a smart solution designed to streamline food orders and track their status. It allows users to interact with the chatbot to add, remove, and complete food orders, as well as track the status of their orders in real time. The chatbot is built using Dialogflow for natural language processing and is connected to a FastAPI backend for order management. The backend communicates with a MySQL database to store and retrieve order information.
 
-## Features
-- **Place Orders**: Users can add items to their orders via the chatbot.
-- **Modify Orders**: Users can update or remove items from their orders.
-- **Track Orders**: Users can check the status of their orders.
-- **Real-time Interaction**: The chatbot provides real-time responses and updates on order status.
-- **Database Integration**: All orders are stored in a MySQL database.
+ **Features**
+ **Place Orders**: Users can add items to their orders via the chatbot.
+ **Modify Orders**: Users can update or remove items from their orders.
+ **Track Orders**: Users can check the status of their orders.
+ **Real-time Interaction**: The chatbot provides real-time responses and updates on order status.
+ **Database Integration**: All orders are stored in a MySQL database.
 
-## Tech Stack
-- **Frontend**: HTML, Dialogflow API for chatbot interface
-- **Backend**: FastAPI, Python
-- **Database**: MySQL
-- **Deployment**: ngrok for HTTP to HTTPS conversion, integrated with Dialogflow for backend connectivity.
+ **Tech Stack**
+ **Frontend**: HTML, Dialogflow API for chatbot interface
+ **Backend**: FastAPI, Python
+ **Database**: MySQL
+ **Deployment**: ngrok for HTTP to HTTPS conversion, integrated with Dialogflow for backend connectivity.
 
-## Installation
+ **Installation**
 
-### Prerequisites
-- Python 3.7+
-- MySQL Server
-- Ngrok for tunneling
-- FastAPI
-- Dialogflow account for setting up chatbot intents
+ **Prerequisites**
+-> Python 3.7+
+-> MySQL Server
+-> Ngrok for tunneling
+-> FastAPI
+-> Dialogflow account for setting up chatbot intents
 
-### Steps to Run Locally
+ **Steps to Run Locally**
 
 1. **Clone the Repository**
-   ```bash
+   CMD
    git clone https://github.com/yourusername/ai-chatbot-food-ordering-tracking.git
    cd ai-chatbot-food-ordering-tracking
-   ```
+   
 
 2. **Create a Python Virtual Environment**
-   ```bash
+   
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+   
 
 3. **Install Dependencies**
-   ```bash
+   
    pip install fastapi mysql-connector-python uvicorn
-   ```
+ 
 
 4. **Set Up the MySQL Database**
    - Create a new MySQL database named `track_n_treat`.
@@ -55,16 +52,16 @@ The **AI Chatbot for Food Ordering and Tracking** is a smart solution designed t
    - Import the necessary tables and procedures from the `/sql` folder (if available).
 
 5. **Run the FastAPI Backend**
-   ```bash
+   
    uvicorn main:app --reload
-   ```
+   
 
 6. **Set Up Ngrok for HTTPS**
    - Download and install [ngrok](https://ngrok.com/).
    - Run ngrok to expose your FastAPI server:
-     ```bash
+     
      ngrok http 8000
-     ```
+    
    - Copy the HTTPS URL from ngrok and use it as the webhook URL in Dialogflow.
 
 7. **Integrate with Dialogflow**
@@ -74,25 +71,31 @@ The **AI Chatbot for Food Ordering and Tracking** is a smart solution designed t
 8. **Access the Frontend**
    - The HTML file (`index.html`) in the project folder includes an embedded Dialogflow chatbot. Open this file in a browser to interact with the chatbot.
 
-## Usage
+ **Usage**
 1. **Place an Order**: Start by mentioning food items and quantities to the chatbot.
 2. **Track an Order**: Provide the order ID, and the chatbot will give you the current status of the order.
 3. **Modify an Order**: You can ask the chatbot to remove items from your current order before completion.
 
-## Project Structure
+ **Project Structure**
 
-```
 📁 ai-chatbot-food-ordering-tracking/
-├── 📁 frontend/
-│   └── index.html           # Frontend with embedded chatbot
-├── 📁 backend/
-│   ├── main.py              # FastAPI backend
-│   ├── db_helper.py         # MySQL operations
-│   ├── generic_helper.py    # Utility functions
-├── README.md                # Project documentation
-```
 
-## Frontend Sample
+├── 📁 frontend/
+
+│   └── index.html           # Frontend with embedded chatbot
+
+├── 📁 backend/
+
+│   ├── main.py              # FastAPI backend
+
+│   ├── db_helper.py         # MySQL operations
+
+│   ├── generic_helper.py    # Utility functions
+
+├── README.md                # Project documentation
+
+
+ **Frontend Sample**
 
 The frontend integrates the chatbot using an iframe. Here's a preview of the HTML structure:
 ```html
@@ -112,11 +115,9 @@ The frontend integrates the chatbot using an iframe. Here's a preview of the HTM
 </html>
 ```
 
-## License
+ **License**
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
-For any questions or suggestions, please reach out to [Your Name](mailto:your.email@example.com).
+ **Contact**
+For any questions or suggestions, please reach out to ELAMARAN V (mailto:elamaran893@gmail.com).
 ```
-
-Make sure to update the **GitHub link**, **email**, and any other necessary details before adding this to your repository.
