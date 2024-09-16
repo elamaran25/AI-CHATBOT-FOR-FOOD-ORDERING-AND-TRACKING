@@ -79,12 +79,19 @@ The **AI Chatbot for Food Ordering and Tracking** is a smart solution designed t
  **Project Structure**
 
 📁 ai-chatbot-food-ordering-tracking/
+
 ├── 📁 frontend/
+
 │   └── index.html           # Frontend with embedded chatbot
+
 ├── 📁 backend/
+
 │   ├── main.py              # FastAPI backend
+
 │   ├── db_helper.py         # MySQL operations
+
 │   ├── generic_helper.py    # Utility functions
+
 ├── README.md                # Project documentation
 
 
