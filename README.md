@@ -3,22 +3,35 @@
 
 
 **Project Description**
+
 The **AI Chatbot for Food Ordering and Tracking** is a smart solution designed to streamline food orders and track their status. It allows users to interact with the chatbot to add, remove, and complete food orders, as well as track the status of their orders in real time. The chatbot is built using Dialogflow for natural language processing and is connected to a FastAPI backend for order management. The backend communicates with a MySQL database to store and retrieve order information.
 
- **Features**
+ **Features** **:**
+ 
  **Place Orders**: Users can add items to their orders via the chatbot.
+ 
  **Modify Orders**: Users can update or remove items from their orders.
+ 
  **Track Orders**: Users can check the status of their orders.
+ 
  **Real-time Interaction**: The chatbot provides real-time responses and updates on order status.
+ 
  **Database Integration**: All orders are stored in a MySQL database.
+ 
 
- **Tech Stack**
+ **Tech Stack** **:**
+ 
  **Frontend**: HTML, Dialogflow API for chatbot interface
+ 
  **Backend**: FastAPI, Python
+ 
  **Database**: MySQL
+ 
  **Deployment**: ngrok for HTTP to HTTPS conversion, integrated with Dialogflow for backend connectivity.
 
- **Installation**
+ 
+
+ **Installation** **:**
 
  **Prerequisites**
 -> Python 3.7+
@@ -27,7 +40,7 @@ The **AI Chatbot for Food Ordering and Tracking** is a smart solution designed t
 -> FastAPI
 -> Dialogflow account for setting up chatbot intents
 
- **Steps to Run Locally**
+ **Steps to Run Locally** **:**
 
 1. **Clone the Repository**
    CMD
